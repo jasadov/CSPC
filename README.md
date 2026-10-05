@@ -23,3 +23,20 @@ Create the environment for a given lab:
 
 **Conclusion:**
 - The NumPy version was much faster than the plain loop — about 11000 times faster. This is because NumPy processes all the numbers at once instead of one by one like a normal loop. Using conda to set up the environment made it easy to run the project on another computer too.
+
+## PW1 - Lab B: Data, Plotting, and Automation
+
+**What the data showed:**
+- The counts start around 5000 and go down over time, like decay usually does.
+
+**Did the observed data match the analytical law?**
+- Yes, the shapes matched pretty well.
+
+**What the Snakemake pipeline does:**
+- It rebuilds the figure only when needed, so it doesn't redo work for no reason.
+
+## PW2 --- Lab A
+
+- Mean acceleration: -8.57 m/s² (Teacher told us that there is a problem with this part, so this answer is acceptable).
+- Why it is noisy: taking a derivative makes noise bigger. Acceleration needs two derivatives, so it is much noisier than the position.
+- What integrating back showed: integration adds values up, so the noise partly cancels. The recovered position is within 0.78 m of the original.
